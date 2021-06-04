@@ -12,7 +12,7 @@ static const int SYS_exit  = 60;
 static inline int __write(unsigned int fp, void* ptr, unsigned size) {
   int ret;
   asm volatile(
-    "movl %[write], %%eax \n"           
+    "movq %[write], %%rax \n"           
     "syscall"
     : "+a" (ret)
     : "D" (fp), "S" (ptr), "d" (size), [write] "i" (SYS_write));
