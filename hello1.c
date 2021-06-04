@@ -31,7 +31,7 @@ static inline void __exit(int errcode) {
 
 void _start() 
 {
-     __write(STDOUT,"Hello, World!\n",sizeof("Hello, World!\n"));
+     __write(STDOUT,"Hello, World!\n",sizeof("Hello, World!\n")-1);
     __exit(0);
 
 }
