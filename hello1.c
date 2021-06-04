@@ -1,5 +1,5 @@
 // quick syscall overview at
-// https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md
+// https://chromium.googlesource.com/chromiumos/docs/+/HEAD/constants/syscalls.md
 
 // calling convention 
 // x86-64  rdi   rsi   rdx   r10   r8    r9 
